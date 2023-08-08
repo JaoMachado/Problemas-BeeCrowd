@@ -1,8 +1,6 @@
 import java.io.IOException;
 import java.util.Scanner;
- 
-public class Ex4 {
- 
+public class ex4 {
     public static void main(String[] args) throws IOException {
         Scanner teclado = new Scanner(System.in);
         
@@ -13,5 +11,4 @@ public class Ex4 {
         
         System.out.println("PROD = " + prod);
     }
- 
 }

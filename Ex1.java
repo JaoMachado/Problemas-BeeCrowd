@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ex1 {
+public class ex1 {
     public static void main(String[] args) throws Exception {
         Scanner teclado = new Scanner(System.in);
         int x;
