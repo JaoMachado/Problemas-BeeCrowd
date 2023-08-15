@@ -18,7 +18,7 @@ public class Ex20 {
         int dias = (idade % 365) % 30;
         
         System.out.println(anos + " ano(s)");
-        System.out.println(meses + " mês(es)");
+        System.out.println(meses + " mes(es)");
         System.out.println(dias + " dia(s)");
         
         teclado.close();
