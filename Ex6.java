@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class ex6 {
+public class Ex6 {
     public static void main(String[] args) throws IOException {
         Scanner teclado = new Scanner(System.in);
         
