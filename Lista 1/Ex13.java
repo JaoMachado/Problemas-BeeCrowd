@@ -21,7 +21,7 @@ public class Ex13 {
         
         
         System.out.println(maior + " eh o maior");
-        
+        teclado.close();
     }
  
 }

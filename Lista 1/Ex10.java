@@ -23,7 +23,7 @@ public class Ex10 {
         double precoTotal = (un1 * preco1) + (un2 * preco2);
         
         System.out.printf("VALOR A PAGAR: R$ %.02f\n", precoTotal);
-        
+        teclado.close();
     }
  
 }

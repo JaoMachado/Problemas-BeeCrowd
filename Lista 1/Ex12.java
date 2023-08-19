@@ -27,7 +27,7 @@ public class Ex12 {
         System.out.printf("TRAPEZIO: %.03f\n", trapezio);
         System.out.printf("QUADRADO: %.03f\n", quadrado);
         System.out.printf("RETANGULO: %.03f\n", retangulo);
-        
+        teclado.close();
     }
  
 }

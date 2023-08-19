@@ -13,7 +13,7 @@ public class ex8 {
         
         System.out.println("NUMBER = " + num);
         System.out.printf("SALARY = U$ %.02f\n", salario);
-        
+        teclado.close();
     }
  
 }

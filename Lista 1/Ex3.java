@@ -9,5 +9,6 @@ public class Ex3 {
         int prod = n1 * n2;
         
         System.out.println("PROD = " + prod);
+        teclado.close();
     }
 }

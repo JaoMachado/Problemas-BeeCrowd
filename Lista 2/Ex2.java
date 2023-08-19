@@ -6,15 +6,21 @@ import java.util.Scanner;
  *      Class name must be "Main" for your solution to execute
  *      El nombre de la clase debe ser "Main" para que su solución ejecutar
  */
-public class Ex11 {
+public class Ex2 {
+
     public static void main(String[] args) throws IOException {
-        Scanner teclado = new Scanner(System.in);
-        
-        double raio = teclado.nextDouble();
-        
-        double volume = (4.0/3) * 3.14159 * (raio * raio * raio);
-        
-        System.out.printf("VOLUME = %.03f\n", volume);
-        teclado.close();
+    Scanner teclado = new Scanner(System.in);
+    
+    int positivos = 0;
+
+    for(int i = 0; i < 6; i++){
+        int valor = teclado.nextInt();
+        if(valor > 0){
+            positivos++;
+        }
     }
+    System.out.println(positivos + " valores positivos");
+    teclado.close();
+    }
+
 }

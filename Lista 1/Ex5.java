@@ -12,7 +12,7 @@ public class Ex5 {
         double media = ((notaA*0.35) + (notaB*0.75)) / 1.1;
         
         System.out.printf("MEDIA = %.05f\n", media);
-        
+        teclado.close();
     }
  
 }

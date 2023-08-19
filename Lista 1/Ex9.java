@@ -13,7 +13,7 @@ public class Ex9 {
         double salarioTotal = salarioFixo + totalVenda * 0.15;
         
         System.out.printf("TOTAL = R$ %.02f\n", salarioTotal);
-        
+        teclado.close();
     }
  
 }

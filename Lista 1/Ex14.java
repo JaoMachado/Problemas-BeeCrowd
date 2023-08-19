@@ -16,7 +16,7 @@ public class Ex14 {
         double litros = teclado.nextDouble();
         
         System.out.printf("%.03f km/l\n", km/litros);
-        
+        teclado.close();
     }
  
 }

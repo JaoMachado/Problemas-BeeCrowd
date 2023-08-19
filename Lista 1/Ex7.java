@@ -13,6 +13,7 @@ public class Ex7 {
         int difProduto = a * b - c * d;
         
         System.out.println("DIFERENCA = " + difProduto);
+        teclado.close();
     }
 
 }
