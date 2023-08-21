@@ -6,20 +6,21 @@ import java.util.Scanner;
  *      Class name must be "Main" for your solution to execute
  *      El nombre de la clase debe ser "Main" para que su solución ejecutar
  */
-public class Ex2 {
+public class Ex4 {
 
     public static void main(String[] args) throws IOException {
     Scanner teclado = new Scanner(System.in);
     
-    int positivos = 0;
+    int pares = 0;
 
-    for(int i = 0; i < 6; i++){
-        double valor = teclado.nextDouble();
-        if(valor > 0){
-            positivos++;
+    for(int i = 0; i < 5; i++){
+        int valor = teclado.nextInt();
+        if(valor % 2 == 0){
+            pares++;
         }
     }
-    System.out.println(positivos + " valores positivos");
+
+    System.out.println(pares + " valores pares");
     teclado.close();
     }
 

@@ -24,7 +24,7 @@ public class Ex3 {
     }
     double media = valoresPositivos / positivos;
     System.out.println(positivos + " valores positivos");
-    System.out.printf("%.01f", media);
+    System.out.printf("%.01f\n", media);
     teclado.close();
     }
 

@@ -6,20 +6,31 @@ import java.util.Scanner;
  *      Class name must be "Main" for your solution to execute
  *      El nombre de la clase debe ser "Main" para que su solución ejecutar
  */
-public class Ex2 {
+public class Ex7 {
 
     public static void main(String[] args) throws IOException {
     Scanner teclado = new Scanner(System.in);
     
-    int positivos = 0;
+    int x = teclado.nextInt();
+    int y = teclado.nextInt();
+    int soma = 0;
 
-    for(int i = 0; i < 6; i++){
-        double valor = teclado.nextDouble();
-        if(valor > 0){
-            positivos++;
-        }
+    if(y > x){
+        for(int i = x + 1; i < y; i++){
+            if(i % 2 != 0){
+                soma += i;
+            }   
+        } 
+    } else {
+        for(int i = y + 1; i < x; i++){
+            if(i % 2 != 0){
+                soma += i;
+            }   
+        } 
     }
-    System.out.println(positivos + " valores positivos");
+
+    System.out.println(soma);
+        
     teclado.close();
     }
 

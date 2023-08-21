@@ -1,6 +1,6 @@
 import java.io.IOException;
 import java.util.Scanner;
- 
+
 /**
  * IMPORTANT: 
  *      O nome da classe deve ser "Main" para que a sua solução execute
@@ -8,7 +8,7 @@ import java.util.Scanner;
  *      El nombre de la clase debe ser "Main" para que su solución ejecutar
  */
 public class Ex10 {
- 
+
     public static void main(String[] args) throws IOException {
         Scanner teclado = new Scanner(System.in);
         
@@ -25,5 +25,5 @@ public class Ex10 {
         System.out.printf("VALOR A PAGAR: R$ %.02f\n", precoTotal);
         teclado.close();
     }
- 
+
 }
