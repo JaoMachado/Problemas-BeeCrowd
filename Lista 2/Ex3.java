@@ -1,31 +1,52 @@
-import java.io.IOException;
 import java.util.Scanner;
-/**
- * IMPORTANT: 
- *      O nome da classe deve ser "Main" para que a sua solução execute
- *      Class name must be "Main" for your solution to execute
- *      El nombre de la clase debe ser "Main" para que su solución ejecutar
- */
+
 public class Ex3 {
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
 
-    public static void main(String[] args) throws IOException {
-    Scanner teclado = new Scanner(System.in);
-    
-    int positivos = 0;
-    double valoresPositivos = 0;
-    
+        int caso = 1;
 
-    for(int i = 0; i < 6; i++){
-        double valor = teclado.nextDouble();
-        if(valor > 0){
-            positivos++;
-            valoresPositivos += valor;
+        // while que vai parar apenas no break
+        while(true){
+            int n = teclado.nextInt();
+
+            // array dos números das bolas de gude
+            int[] bolGudes = new int[n+1];
+
+            // recebendo os números e add no array
+            for(int i = 0; i < n+1; i++){
+                bolGudes[i] = teclado.nextInt();
+            }
+
+            // se n e q forem iguais a 0, break
+            if(n == 0 && bolGudes[0] == 0){
+                break;
+            }
+
+            System.out.println("CASE# " + caso + ":");
+
+            // realizando a consulta
+            for(int i = 0; i < bolGudes[0]; i++){
+                int consulta = teclado.nextInt();
+                int posicao = consultarBolGude(bolGudes, consulta);
+
+                if(posicao != -1){
+                    System.out.println(consulta + " found at " + (1 + posicao));
+                } else {
+                    System.out.println(consulta + " not found");
+                }
+            }
+            caso++;
         }
-    }
-    double media = valoresPositivos / positivos;
-    System.out.println(positivos + " valores positivos");
-    System.out.printf("%.01f\n", media);
-    teclado.close();
+        teclado.close();
     }
 
+    public static int consultarBolGude(int[] gudes, int consulta){
+        for(int i = 0; i < gudes.length; i++){
+            if(gudes[i] == consulta){
+                return i;
+            }
+        }
+        return -1;
+    }
 }

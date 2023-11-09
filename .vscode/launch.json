@@ -1,0 +1,231 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Ex1",
+            "request": "launch",
+            "mainClass": "Ex1",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex10",
+            "request": "launch",
+            "mainClass": "Ex10",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex11",
+            "request": "launch",
+            "mainClass": "Ex11",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex12",
+            "request": "launch",
+            "mainClass": "Ex12",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex13",
+            "request": "launch",
+            "mainClass": "Ex13",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex14",
+            "request": "launch",
+            "mainClass": "Ex14",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex15",
+            "request": "launch",
+            "mainClass": "Ex15",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex16",
+            "request": "launch",
+            "mainClass": "Ex16",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex17",
+            "request": "launch",
+            "mainClass": "Ex17",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex18",
+            "request": "launch",
+            "mainClass": "Ex18",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex19",
+            "request": "launch",
+            "mainClass": "Ex19",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex2",
+            "request": "launch",
+            "mainClass": "Ex2",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex20",
+            "request": "launch",
+            "mainClass": "Ex20",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex21",
+            "request": "launch",
+            "mainClass": "Ex21",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex22",
+            "request": "launch",
+            "mainClass": "Ex22",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex23",
+            "request": "launch",
+            "mainClass": "Ex23",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex24",
+            "request": "launch",
+            "mainClass": "Ex24",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex25",
+            "request": "launch",
+            "mainClass": "Ex25",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex26",
+            "request": "launch",
+            "mainClass": "Ex26",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex27",
+            "request": "launch",
+            "mainClass": "Ex27",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex28",
+            "request": "launch",
+            "mainClass": "Ex28",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex29",
+            "request": "launch",
+            "mainClass": "Ex29",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex3",
+            "request": "launch",
+            "mainClass": "Ex3",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex30",
+            "request": "launch",
+            "mainClass": "Ex30",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex4",
+            "request": "launch",
+            "mainClass": "Ex4",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex5",
+            "request": "launch",
+            "mainClass": "Ex5",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex6",
+            "request": "launch",
+            "mainClass": "Ex6",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex7",
+            "request": "launch",
+            "mainClass": "Ex7",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex8",
+            "request": "launch",
+            "mainClass": "Ex8",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "Ex9",
+            "request": "launch",
+            "mainClass": "Ex9",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        },
+        {
+            "type": "java",
+            "name": "ex8",
+            "request": "launch",
+            "mainClass": "ex8",
+            "projectName": "Problemas-BeeCrowd-1_db7868cb"
+        }
+    ]
+}
