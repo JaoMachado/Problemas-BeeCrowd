@@ -3,69 +3,67 @@ import java.util.Scanner;
 public class Ex1 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        String entrada;
 
         int n = teclado.nextInt();
         teclado.nextLine();
-        
-        for (int i = 0; i < n; i++){
-            entrada = teclado.nextLine();
-            // Transformando String em char
-            char[] c = entrada.toCharArray();
-            // chamando o método operar
-            operar(c);
+
+        for (int i = 0; i < n; i++) {
+            String expressao = teclado.nextLine();
+            String resultado = calcularExpressao(expressao);
+            System.out.println(resultado);
         }
+
         teclado.close();
     }
 
-    public static void operar(char[] c){
-        // pegando e transformando os numeros e operador
-        int n1 = Character.getNumericValue(c[0]);
-        int d1 = Character.getNumericValue(c[4]);
-        char operador = c[6];
-        int n2 = Character.getNumericValue(c[8]);
-        int d2 = Character.getNumericValue(c[12]);
+    public static String calcularExpressao(String expressao) {
+        String[] numeros = expressao.split(" ");
 
-        int rN = 1;
-        int rD = 1;
+        int n1 = Integer.parseInt(numeros[0]);
+        int d1 = Integer.parseInt(numeros[2]);
+        int n2 = Integer.parseInt(numeros[4]);
+        int d2 = Integer.parseInt(numeros[6]);
+        char operador = numeros[3].charAt(0);
 
-        // verificando o operador e realizando a conta
+        int numeradorResultado = 0;
+        int denominadorResultado = 0;
+        int numeradorResultadoSimp = 0;
+        int denominadorResultadoSimp = 0;
+
         switch (operador) {
             case '+':
-                rN = (n1*d2 + n2*d1);
-                rD = (d1*d2);
+                numeradorResultado = n1 * d2 + n2 * d1;
+                denominadorResultado = d1 * d2;
                 break;
             case '-':
-                rN = (n1*d2 - n2*d1);
-                rD = (d1*d2);
+                numeradorResultado = n1 * d2 - n2 * d1;
+                denominadorResultado = d1 * d2;
                 break;
             case '*':
-                rN = (n1*n2);
-                rD = (d1*d2);
+                numeradorResultado = n1 * n2;
+                denominadorResultado = d1 * d2;
                 break;
             case '/':
-                rN = (n1*d2);
-                rD = (d1*n2);
+                numeradorResultado = n1 * d2;
+                denominadorResultado = n2 * d1;
                 break;
         }
-        System.out.print(rN + "/" + rD + " = ");
-        simplificar(rN, rD);
 
+        // Simplificar o resultado
+        int gcd = gcd(Math.abs(numeradorResultado), Math.abs(denominadorResultado));
+        numeradorResultadoSimp = numeradorResultado / gcd;
+        denominadorResultadoSimp = denominadorResultado / gcd;
+
+        return numeradorResultado + "/" + denominadorResultado + " = " + numeradorResultadoSimp + "/" + denominadorResultadoSimp;
     }
 
-    public static void simplificar(int rN, int rD) {
-        int rNabs = Math.abs(rN);
-        int rDabs = Math.abs(rD);
-
-        while (rDabs != 0) {
-            int temp = rDabs;
-            rDabs = rNabs % rDabs;
-            rNabs = temp;
+    // Algoritmo de Euclides para encontrar o MDC (máximo divisor comum)
+    private static int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
         }
-        
-        rN /= rNabs;
-        rD /= rNabs;
-
-        System.out.println(rN + "/" + rD);
+        return a;
     }
 }
