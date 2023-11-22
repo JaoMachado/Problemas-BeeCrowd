@@ -9,18 +9,29 @@ public class Ex1{
         int hf = t.nextInt();
         int mf = t.nextInt();
 
-        int hInicialMin = (hi * 60) + mi;
-        int hFinalMin = (hf * 60) + mf;
+        int horaJogo = hf - hi;
 
-        int tempMin = hFinalMin - hInicialMin;
-        int tempHJogo = tempMin / 60; 
-
-        int tempMinJogo = tempMin % 60;
-
-        if(tempHJogo == 0 && tempMinJogo == 0){
-            tempHJogo = 24;
+        if (horaJogo < 0) {
+            horaJogo += 24;
         }
 
-        System.out.println("O JOGO DUROU " + tempHJogo + " HORA(S) E " + tempMinJogo + " MINUTO(S)");
+        int minJogo = mf - mi;
+
+        if(minJogo < 0) {
+            minJogo += 60;
+            horaJogo--;
+        }
+
+        if (horaJogo < 0) {
+            horaJogo += 24;
+        }
+
+        if(hi == hf && mi == mf){
+            System.out.println("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)");
+        } else {
+            System.out.println("O JOGO DUROU " + horaJogo +" HORA(S) E " + minJogo + " MINUTO(S)");
+        }
+
+        t.close();
     }
 }
